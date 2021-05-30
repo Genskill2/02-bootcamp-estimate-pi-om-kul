@@ -11,12 +11,12 @@ def wallis(n):
    
  
 def monte_carlo(n):
-   from random import randint
+   import random
    circle=0;
    total=0;
    for i in range (n):
-         x= randint(-1,1)
-         y= randint(-1,1)
+         x= random.uniform(-1,1)
+         y= random.uniform(-1,1)
          d= ((x*x)+(y*y))**0.5
          if d<=1:
             circle=circle+1
